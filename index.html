@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA QUERY</title>
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: blanchedalmond;
+            flex-direction: row;
+        }
+        .flex-container div{
+            background-color: chocolate;
+            margin: 3px;
+            color: beige;
+            flex-basis: 100px;
+        }
+        @media (max-width:600px){
+            .flex-container{
+            flex-direction: column;
+            }
+            .flex-container div{
+            flex-basis: 100%;
+            
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>Hola</div>
+        <div>soc</div>
+        <div>Oriol</div>
+    </div>
+</body>
+</html>
